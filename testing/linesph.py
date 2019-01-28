@@ -1,6 +1,7 @@
+# poging tot maken output per uur zonder database.
 import csv
-hlist=[]
-uhlist=[]
+hlist = []
+uhlist = []
 unique = []
 with open('/home/sga/kosme/datatest.csv', 'r') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
@@ -11,23 +12,15 @@ with open('/home/sga/kosme/datatest.csv', 'r') as csvfile:
         # print (row[1][9:26])
     for hour in hlist:
         if hour not in uhlist:
-            uhlist.append(hour)   
-        
+            uhlist.append(hour)
+
     for hour in uhlist:
-        hour=[]
+        hour = []
         for row in spamreader:
-            print (row[1][9:26])
+            print(row[1][9:26])
             # if (row[1][9:26]) not in hour:
             #     hour.append(row[1][9:26])
-##22-01-2019, 10:41:18,64:a2:f9:ea:7b:30,-16,40
+# 22-01-2019, 10:41:18,64:a2:f9:ea:7b:30,-16,40
 
 
-
-
-
-    
 print(len(unique))
-
-
-
-
