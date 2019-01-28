@@ -6,9 +6,23 @@ Wifisniffer PTW
 Structure:
 
 
-  /kosme/
+
+
+  **/kosme/**
     Moet via Platformio geflashed worden op NodeMCU
- /Rasp src/
+    
+    
+    
+    
+    
+    
+ **/Rasp src/**
     Runt op Raspberrypi(Of andere client) om  data op te slaan
- /testing/
+    
+    
+    
+    
+    
+    
+ **/testing/**
     Deel producten, werken(Soms)
