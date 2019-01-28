@@ -27,8 +27,8 @@ void loop()
   wifi_set_channel(channel);
   while (true)
   {
-    nothing_new++; // Array is not finite, check bounds and adjust if required
-    if (nothing_new > 10)
+    nothing_new++;        // Array is not finite, check bounds and adjust if required
+    if (nothing_new > 10) //in ms
     {
       nothing_new = 0;
       channel++;
